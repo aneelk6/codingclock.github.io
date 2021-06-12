@@ -1,0 +1,223 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.one {
+  /* background-attachment: fixed; */
+  height: 100%;
+}
+
+.dropdown-menu > li.kopie > a {
+  padding-left: 5px;
+}
+
+.dropdown {
+  transition: 5s;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;
+  height: 0;
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #555;
+  transition: 7s;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > .active > a:hover {
+  text-decoration: none;
+  transition: 2s;
+}
+
+@media (max-width: 767px) {
+  .navbar-nav {
+    display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #ccc;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    border-bottom: 1px solid white;
+    border-radius: 0;
+  }
+  .dropdown-menu {
+    padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+    padding-left: 20px;
+  }
+  .dropdown-menu .dropdown-menu .dropdown-menu {
+    padding-left: 30px;
+  }
+  li.dropdown.open {
+    border: 0px solid red;
+  }
+}
+
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+  }
+}
+
+/* gallery hover effects */
+
+.ser-boxes {
+  padding: 50px 0;
+}
+.ser-boxes h3 {
+  font-weight: 700;
+  font-size: 34px;
+  transition: 0.5s;
+}
+.ser-boxes p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  transition: 0.5s;
+  min-height: 90px;
+}
+.ser-boxes a {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 16px;
+  color: #f36;
+}
+.ser-boxes .col {
+  border-bottom: 3px solid #f36;
+  overflow: hidden;
+  position: relative;
+  padding: 0 20px 30px;
+}
+.ser-boxes i {
+  margin-left: 10px;
+  background: #f36;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 100%;
+  padding-top: 6px;
+}
+.ser-boxes .col:before {
+  position: absolute;
+  content: "";
+  background: #f36;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+  transform: translateY(100%);
+}
+.ser-boxes .col:hover:before {
+  z-index: -1;
+  transform: translateY(0);
+}
+.ser-boxes .col:hover {
+  border-color: #000;
+}
+.ser-boxes .col:hover a,
+.ser-boxes .col:hover h3,
+.ser-boxes .col:hover p {
+  color: #fff;
+}
+.ser-boxes .col:hover i {
+  background: #fff;
+  color: #f36;
+}
+
+.main_cta.new img {
+  width: 170px;
+  margin-top: 0;
+  position: absolute;
+}
+#mybtn {
+  display: none;
+}
+
+/* about us background pic */
+/* animation */
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 1s;
+}
+.one.animate__animated.animate__bounceInDown {
+  --animate-duration: 3s;
+  /* --animate-delay: 0.2; */
+}
+.two.animate__animated.animate__jackInTheBox {
+  --animate-duration: 5s;
+  /* --animate-delay: 1; */
+}
+
+.three.animate__animated.animate__fadeInLeft {
+  --animate-duration: 5s;
+  --animate-delay: 0.18s;
+}
+
+.ls-l.rmore.four.animate__animated.animate__zoomInUp {
+  --animate-duration: 7s;
+  /* --animate-delay: 0.8; */
+}
+:root {
+  --animate-duration: 900ms;
+  --animate-delay: 0.9s;
+}
+
+.m {
+  color: #fff;
+  font-size: 25px;
+}
+
+/* form code */
